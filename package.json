@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/nat-nat33/natmac/issues"
   },
-  "homepage": "https://github.com/nat-nat33/natmac#readme"
+  "homepage": "https://github.com/nat-nat33/natmac#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react-router": "^2.4.1"
+  }
 }
