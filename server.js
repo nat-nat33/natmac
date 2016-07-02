@@ -3,12 +3,16 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.use('*', (req, res) => {
-  res.sendFile(path.resolve(_dirname, 'public', 'index.html'));
+app.get('*', function(req, res){
+  res.sendFile('./public/index.html',
+    {
+      root  : __dirname
+    }
+  );
 });
 
-app.listen(port, () => {
-  console.log('port listening on ' + port);
+app.listen(PORT, () => {
+  console.log(`server is running on port ${PORT}`);
 });
