@@ -1,14 +1,14 @@
-'use strict';
+//Import Dependencies.
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router } from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
 
-const Link = ReactRouter.Link
+const browserHistory = createBrowserHistory();
 
-const App = React.createClass({
-  render(){
-    return (
-      <div className= "myapp">
-        <h1> My App </h1>
-      </div>
-    )
-  }
-})
+//Import Routes.
+// import routes from './routes/routes.js';
+
+ReactDOM.render(
+  document.getElementById('app-container')
+);
